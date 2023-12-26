@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_PR1_Git_Zaychenko", "Lab_7\OOP_PR1_Git_Zaychenko.csproj", "{DD295CCB-DF9D-4E8D-A769-10127268486B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_Lab7_Zaychenko", "Lab_7\OOP_Lab7_Zaychenko.csproj", "{DD295CCB-DF9D-4E8D-A769-10127268486B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsLab7", "UnitTestsLab7\UnitTestsLab7.csproj", "{9548DACC-CBE6-4655-9227-DBA25550F70F}"
 EndProject
