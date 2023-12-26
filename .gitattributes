@@ -2,6 +2,7 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
+* linguist-documentation=readme_source/README.md
 
 ###############################################################################
 # Set default behavior for command prompt diff.
