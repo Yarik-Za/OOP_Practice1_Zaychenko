@@ -216,6 +216,7 @@ __Опис програми:__
 ![7](readme_source/tests/7.png)
 
 Результат спроби запису неправильного файлу з вмістом:
+
 ```
 UnitTest for lab 7
 1|02.01.24|Math|Default|Solve equations
