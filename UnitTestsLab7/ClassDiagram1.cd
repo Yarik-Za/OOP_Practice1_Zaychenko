@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UnitTests4_5.UnitTests_Lab4_5">
+    <Position X="2.25" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAQAAAAAQAAAAQAAAACAAAECAAI0AAAAABACAABA=</HashCode>
+      <FileName>UnitTestLab4-5.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitTests6.UnitTests_Lab6">
+    <Position X="6.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAIAAAAAgQQAAAAUAAgUAAAAAAAAAAAoACAAIAA=</HashCode>
+      <FileName>UnitTestLab6.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitTests7.UnitTestLab7">
+    <Position X="4.5" Y="4.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAgAAEAAAAAgAQAQAACA=</HashCode>
+      <FileName>UnitTestLab7.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

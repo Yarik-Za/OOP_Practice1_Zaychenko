@@ -193,13 +193,15 @@ namespace Lab
 
         public void Output()
         {
-            for (int i = 0; i < Storage.GetTasks().Count; i++)
+            try
             {
                 if (!(Storage.GetTasks().Any()))
                     throw new Exception("No tasks exist in list");
 
-                Print_task_info(Storage.GetTasks(), i, 1);
+                for (int i = 0; i < Storage.GetTasks().Count; i++)
+                    Print_task_info(Storage.GetTasks(), i, 1);
             }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
 
         #region find
@@ -408,6 +410,8 @@ namespace Lab
         public void Clear_Colection()
         {
             Storage.GetTasks().Clear();
+            if (Storage.GetTasks().Count == 0)
+                Console.WriteLine("Сховище очищено успішно!");
         }
         #endregion
 
@@ -556,6 +560,8 @@ namespace Lab
 
         public static List<Homework> LoadFromTxt(string filePath)
         {
+            int suces_count = 0;
+            int line_num = 1;
             List<Homework> tasks = new List<Homework>();
 
             if (!File.Exists(filePath))
@@ -564,11 +570,14 @@ namespace Lab
             using (StreamReader reader = new StreamReader(filePath))
             {
                 string line;
-                while ((line = reader.ReadLine()) != null)
+                while ((line = reader.ReadLine()) != null && line != "")
                     if (Homework.TryParse(line, out Homework task, out Exception errorMessage))
-                        tasks.Add(task);
-                    else throw new Exception($"Error parsing line: {errorMessage.Message}");
+                    {
+                        tasks.Add(task); suces_count++;
+                    }
+                    else Console.WriteLine($"Error parsing line {line_num++}: {errorMessage.Message}");
             }
+            Console.WriteLine("Added objects from txt file: " + suces_count);
             return tasks;
         }
 
@@ -581,7 +590,7 @@ namespace Lab
                 lines = File.ReadAllLines(path).ToList();
                 // або
                 // string[] lines = File.ReadAllLines(path);
-                Console.WriteLine("\nContents of JSON Account file:\n");
+                Console.WriteLine("\nContents of JSON file:\n");
                 foreach (var item in lines)
                     Console.WriteLine(item);
 
@@ -668,6 +677,7 @@ namespace Lab
 
                 case 0: break;
             }
+
         }
         #endregion
 

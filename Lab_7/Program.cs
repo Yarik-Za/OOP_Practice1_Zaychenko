@@ -1,21 +1,18 @@
 ﻿using System.Text;
-using System.Text.Unicode;
 
 namespace Lab
 {
     public class Program
     {
-
         public static void Main(string[] args)
         {
-            //текст для створення коміту в практичну
 
             // можливість зчитування та виведення кирилічних символів
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             Console.InputEncoding = System.Text.Encoding.GetEncoding(1251);
             //Console.OutputEncoding = System.Text.Encoding.GetEncoding(1251);
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            
+
             #region debug_info
 
             //debug list
@@ -35,7 +32,7 @@ namespace Lab
 
 
             //debug separator "|" input   777 | 11.11.23 | Space Subj | Oral | Debug separator
-            
+
             #endregion
 
             Interface ui = new();
@@ -51,9 +48,9 @@ namespace Lab
                     case 3: ui.Delete(); ui.PressEnter(); break;
                     case 4: ui.OverloadedMethodsModes(); ui.PressEnter(); break;
                     case 5: ui.StaticMethodsModes(); ui.PressEnter(); break;
-                    case 6: ui.Save_modes(); break;
-                    case 7: ui.Read_modes(); break;
-                    case 8: ui.Clear_Colection(); break;
+                    case 6: ui.Save_modes(); ui.PressEnter(); break;
+                    case 7: ui.Read_modes(); ui.PressEnter(); break;
+                    case 8: ui.Clear_Colection(); ui.PressEnter(); break;
                     case 9: Environment.Exit(0); ui.PressEnter(); break;
                 }
             }

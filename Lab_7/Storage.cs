@@ -1,5 +1,4 @@
-﻿
-namespace Lab
+﻿namespace Lab
 {
     public static class Storage
     {

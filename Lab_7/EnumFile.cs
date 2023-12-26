@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace Lab
+﻿namespace Lab
 {
     public enum TaskType
     {
